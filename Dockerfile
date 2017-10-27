@@ -4,4 +4,6 @@ RUN apt-get update && apt-get -y install unzip
 
 COPY devops.zip .
 
-RUN unzip devops.zip -d /usr/share/nginx/html
+RUN unzip devops.zip -d .
+
+RUN cp devops/** /usr/share/nginx/html
