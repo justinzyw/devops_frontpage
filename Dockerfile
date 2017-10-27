@@ -1,6 +1,6 @@
 FROM nginx:1.13.5
 
-RUN apt-get -y install unzip
+RUN apt-get update && apt-get -y install unzip
 
 COPY devops.zip 
 
