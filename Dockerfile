@@ -8,4 +8,4 @@ RUN mkdir frontpage
 
 RUN unzip frontpage.zip -d frontpage/
 
-RUN cp frontpage/** /usr/share/nginx/html
+RUN cp -R frontpage/** /usr/share/nginx/html
